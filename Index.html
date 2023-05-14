@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Holes Play</title>
     <link rel="stylesheet" href="D:\VS Projects\Holes\Styles\Index.css" />
     <style>
@@ -53,14 +53,25 @@
       .show {
         display: block;
       }
+      @media only screen and (max-width: 600px) {
+      h1{
+        font-size: 20px;
+      }
+      .main-img{
+        max-width: 10%;
+        height: auto;
+      }
+}
     </style>
   </head>
   <body>
-    <img
-      src="D:\VS Projects\Holes\Images\Holes-Coming Soon.png"
-      height="700px"
-      style="float: right"
-    />
+    <div class="main-img">
+      <img
+        src="D:\VS Projects\Holes\Images\Holes-Coming Soon.png"
+        height="700px"
+        style="float: right"
+      />
+    </div>
     <div class="navbar">
       <div class="navbar-heading">
         <h1>HOLES PLAY</h1>
