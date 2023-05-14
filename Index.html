@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Holes Play</title>
+    <link rel="stylesheet" href="D:\VS Projects\Holes\Styles\Index.css" />
+    <style>
+      .dropbtn {
+        background-color: purple;
+        border-radius: 10px;
+        color: white;
+        padding: 16px;
+        font-size: 26px;
+        font-family: 'Courier New', Courier, monospace;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropbtn:hover,
+      .dropbtn:focus {
+        background-color: purple;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: cyan;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #ddd;
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="D:\VS Projects\Holes\Images\Holes-Coming Soon.png"
+      height="700px"
+      style="float: right"
+    />
+    <div class="navbar">
+      <div class="navbar-heading">
+        <h1>HOLES PLAY</h1>
+        <h2 style="color: rgb(163, 0, 0)">BY GRADE 6</h2>
+      </div>
+      <div class="navs">
+        <br />
+        <br />
+        <br>
+        <br>
+        <b>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Scenes</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Scene_1.html">Scene 1</a>
+              <a href="Scene_2.html">Scene 2</a>
+              <a href="Scene_3.html">Scene 3</a>
+              <a href="Scene_4.html">Scene 4</a>
+              <a href="Scene_5.html">Scene 5</a>
+              <a href="Scene_6.html">Scene 6</a>
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <a href="Summary.html">Summary</a>
+          <br />
+          <br />
+          <br />
+          <a href="Song.html">Song</a>
+          <br />
+          <br />
+          <br />
+          <a href="Bloopers.html">Bloopers</a>
+          <br />
+          <br />
+          <br />
+          <a href="Casting.html">Casting</a>
+        </b>
+
+    <script>
+      /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches(".dropbtn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
