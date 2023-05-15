@@ -133,6 +133,7 @@ h1 {
 
 .box > span {
   font-size: 3.8vh;
+  font-weight: bold;
   display: block;
   text-align: center;
   height: 10vh;
